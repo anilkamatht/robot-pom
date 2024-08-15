@@ -7,7 +7,7 @@ LoginTest
 
         open browser    https://www.facebook.com/  chrome
         input text  id:email  anilkamatht@gmail.com
-
+#icon
 
 
 *** Keywords ***
