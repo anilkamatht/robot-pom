@@ -17,6 +17,7 @@ LoginTest
 #monkey
 #donkey
 #jockey
+#Lulu hypermarket
 
 
 *** Keywords ***
