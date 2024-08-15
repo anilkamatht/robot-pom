@@ -1,73 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-14T06:41:21.384195" rpa="false" schemaversion="5">
-<suite id="s1" name="TC2" source="C:\Users\anilk\PycharmProjects\TestAutomation\TestCases\TC2.robot">
-<test id="s1-t1" name="LoginTest" line="8">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-15T18:35:09.280643" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\anilk\PycharmProjects\TestAutomation\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-14T06:41:21.842438" level="INFO">Opening browser 'chrome' to base url 'https://formy-project.herokuapp.com/form'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<msg time="2024-08-15T18:35:10.397378" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-14T06:41:21.842438" elapsed="6.312161"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.169121" elapsed="0.086329"/>
-</kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-14T06:41:28.280623" level="INFO">Page title is 'Formy'.</msg>
-<arg>Formy</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.255450" elapsed="0.025173"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-08-14T06:41:28.280623" level="INFO">${"email_txt"} = id:first-name</msg>
-<var>${"email_txt"}</var>
-<arg>id:first-name</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.280623" elapsed="0.000000"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-08-14T06:41:28.361730" level="INFO">Element 'id:first-name' is displayed.</msg>
-<arg>${"email_txt"}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.289016" elapsed="0.072714"/>
-</kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${"email_txt"}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.361730" elapsed="0.062543"/>
+<status status="PASS" start="2024-08-15T18:35:10.397378" elapsed="5.597814"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-14T06:41:28.424273" level="INFO">Typing text 'Anil' into text field 'id:first-name'.</msg>
-<arg>${"email_txt"}</arg>
-<arg>Anil</arg>
+<msg time="2024-08-15T18:35:15.995192" level="INFO">Typing text 'anilkamatht@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>anilkamatht@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.424273" elapsed="0.276144"/>
+<status status="PASS" start="2024-08-15T18:35:15.995192" elapsed="0.155684"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-14T06:41:33.701844" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-14T06:41:28.701439" elapsed="5.000405"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${"email_txt"}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-14T06:41:33.701844" elapsed="0.081352"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-14T06:41:36.783518" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-14T06:41:33.783196" elapsed="3.000322"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-14T06:41:36.783518" elapsed="2.452950"/>
-</kw>
-<status status="PASS" start="2024-08-14T06:41:21.842438" elapsed="17.394030"/>
+<status status="PASS" start="2024-08-15T18:35:10.397378" elapsed="5.753498"/>
 </test>
-<status status="PASS" start="2024-08-14T06:41:21.384195" elapsed="17.852273"/>
+<status status="PASS" start="2024-08-15T18:35:09.280643" elapsed="6.870233"/>
 </suite>
 <statistics>
 <total>
@@ -76,7 +27,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC2">TC2</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
 </suite>
 </statistics>
 <errors>
