@@ -15,6 +15,7 @@ LoginTest
 
 #test casesh
 #monkey
+#donkey
 
 
 *** Keywords ***
