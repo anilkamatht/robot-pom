@@ -19,8 +19,3 @@ RegTest
         input text    name:Email    anhc@gmail.com
         input text    name:Password    davidjhon
         input text    name:ConfirmPassword    davidjhon
-
-
-
-
-
