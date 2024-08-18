@@ -1,13 +1,13 @@
 *** Settings ***
 Library  SeleniumLibrary
 *** Variables ***
-${browser}  chrome
+#${browser}  chrome
 ${url}  https://formy-project.herokuapp.com/form
 
 *** Test Cases ***
 LoginTest
 
-        open browser    ${url}  ${browser}
+        open browser    ${url}  #${browser}
         maximize browser window
         title should be     Formy
         ${"email_txt"}  set variable    id:first-name

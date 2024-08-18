@@ -1,33 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-15T18:35:09.280643" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="C:\Users\anilk\PycharmProjects\TestAutomation\TestCases\TC1.robot">
-<test id="s1-t1" name="LoginTest" line="6">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-18T09:40:48.895240" rpa="false" schemaversion="5">
+<suite id="s1" name="TimeOutTests" source="C:\Users\anilk\PycharmProjects\TestAutomation\TestCases\TimeOutTests.robot">
+<test id="s1-t1" name="RegTest" line="7">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-15T18:35:10.397378" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
-<arg>https://www.facebook.com/</arg>
+<msg time="2024-08-18T09:40:49.068505" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<arg>https://demowebshop.tricentis.com/register</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-15T18:35:10.397378" elapsed="5.597814"/>
+<status status="PASS" start="2024-08-18T09:40:49.068505" elapsed="6.872483"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-18T09:40:55.942022" elapsed="0.062717"/>
+</kw>
+<kw name="Get Selenium Timeout" owner="SeleniumLibrary">
+<msg time="2024-08-18T09:40:56.004739" level="INFO">${spead} = 5 seconds</msg>
+<var>${spead}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-08-18T09:40:56.004739" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spead}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-18T09:40:56.004739" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-08-18T09:40:56.004739" elapsed="0.007999"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-08-18T09:41:06.301345" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-18T09:41:06.301345" level="FAIL">Text 'Registration' did not appear in 10 seconds.</msg>
+<arg>Registration</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-08-18T09:40:56.012738" elapsed="10.304288">Text 'Registration' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2024-08-18T09:41:06.317026" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-15T18:35:15.995192" level="INFO">Typing text 'anilkamatht@gmail.com' into text field 'id:email'.</msg>
-<arg>id:email</arg>
-<arg>anilkamatht@gmail.com</arg>
+<arg>name:FirstName</arg>
+<arg>David</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-15T18:35:15.995192" elapsed="0.155684"/>
+<status status="NOT RUN" start="2024-08-18T09:41:06.317026" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-08-15T18:35:10.397378" elapsed="5.753498"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:LastName</arg>
+<arg>Jhon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-18T09:41:06.317026" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:Email</arg>
+<arg>anhc@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-18T09:41:06.317026" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:Password</arg>
+<arg>davidjhon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-18T09:41:06.317026" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:ConfirmPassword</arg>
+<arg>davidjhon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-18T09:41:06.317026" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-18T09:40:49.068505" elapsed="17.248521">Text 'Registration' did not appear in 10 seconds.</status>
 </test>
-<status status="PASS" start="2024-08-15T18:35:09.280643" elapsed="6.870233"/>
+<status status="FAIL" start="2024-08-18T09:40:48.895240" elapsed="17.421786"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TimeOutTests">TimeOutTests</stat>
 </suite>
 </statistics>
 <errors>
